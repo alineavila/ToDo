@@ -17,6 +17,6 @@ export class LoginComponent implements OnInit {
   }
 
   handleLogin(){  
-    this.router.navigate(['welcome']);
+    this.router.navigate(['welcome/', this.username]); // passando o parâmetro da rota
   }
 }
